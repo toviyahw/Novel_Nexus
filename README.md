@@ -53,6 +53,8 @@ action-adventure\
 CHALLENGES:\
 keeping fname and lname together, in this instance, author names, especially across different cultures may not be in this format, many authors also use middle initials.\
 additional authors table, its not common for books I read to have more than 1 author, so this table contains additional authors of books I have read\
+ \
+altering data types, creating a new enum data type to hold the formats, changing isbn from INT to varchar to accommodate for kindle digital and audio isbns which may contain non numerical characters.\
 
 Choosing rankings categories that I can apply to everything I have read (no null values for ratings) and defining a point system (5 pts per category, half values accepted, scale is 1-5)\
 Defining my ratings categories:\
