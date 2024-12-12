@@ -55,7 +55,9 @@ keeping fname and lname together, in this instance, author names, especially acr
 additional authors table, its not common for books I read to have more than 1 author, so this table contains additional authors of books I have read\
  \
 altering data types, creating a new enum data type to hold the formats, changing isbn from INT to varchar to accommodate for kindle digital and audio isbns which may contain non numerical characters.\
-
+ \
+creating new page_count table to account for some books that do not have pages aka audiobooks.\
+ \
 Choosing rankings categories that I can apply to everything I have read (no null values for ratings) and defining a point system (5 pts per category, half values accepted, scale is 1-5)\
 Defining my ratings categories:\
 plot: how much did I enjoy the overall story progression and conclusion?\
