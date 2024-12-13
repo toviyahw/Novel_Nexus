@@ -68,3 +68,5 @@ impact: how much did reading this book actually affect me?\
 personages: how much did I enjoy the character(s)?\
 re-readability: how likely is it that I would re-read this book and enjoy it?\
 immersivity: did I forget about the real world while reading this? was I transported? (another big category for me)\
+ \
+ NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. I have also only included books that I recorded the read date for in the date_read table. Hence, the overall books table contains books I have read, but I may not be alble to include them in additional more detailed tables.\
