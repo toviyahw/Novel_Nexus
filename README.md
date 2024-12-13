@@ -52,18 +52,19 @@ action-adventure\
 
 CHALLENGES:\
 keeping fname and lname together, in this instance, author names, especially across different cultures may not be in this format, many authors also use middle initials.\
-additional authors table, its not common for books I read to have more than 1 author, so this table contains additional authors of books I have read\
+additional authors table, its not common for books I read to have more than 1 author, so this table contains additional authors of books I have read UPDATE NOT NECESSARY, all authors go into author table.\
  \
 altering data types, creating a new enum data type to hold the formats, changing isbn from INT to varchar to accommodate for kindle digital and audio isbns which may contain non numerical characters.\
  \
 creating new page_count table to account for some books that do not have pages aka audiobooks.\
  \
-Choosing rankings categories that I can apply to everything I have read (no null values for ratings) and defining a point system (5 pts per category, half values accepted, scale is 1-5)\
+Choosing rankings categories that I can apply to everything I have read (no null values for ratings) and defining a point system (5 pts per category, half values accepted, scale is 1-5) UPDATE: no need for half values, as I am rating- I am able to assign whole numbers quite easily.\
+ \
 Defining my ratings categories:\
 plot: how much did I enjoy the overall story progression and conclusion?\
 writing: how much did i enjoy the writing and dialogue?\
+pacing: did the book feel sluggish and difficult to get through at times?\
 impact: how much did reading this book actually affect me?\
-characters: how much did I enjoy the character(s)?\
-originality: is this unlike anything I have ever read, or did it feel familiar and predictable? (As an avid reader, this category is extrememly important to me. I love it when I feel like i have just read something completely fresh and new to me!\
+personages: how much did I enjoy the character(s)?\
 re-readability: how likely is it that I would re-read this book and enjoy it?\
 immersivity: did I forget about the real world while reading this? was I transported? (another big category for me)\
