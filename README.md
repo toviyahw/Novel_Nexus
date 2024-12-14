@@ -1,6 +1,7 @@
 # Novel Nexus
+![fav copy](https://github.com/user-attachments/assets/c1b8c3b7-1ef0-454d-805c-c0e4c2437b40)
 
-![novel nexus](https://www.pinterest.com/pin/1037305726671301421/)
+
 A collection of the many chapters I have read, over the course of the many different chapters of my life.\
 
 *create canva banner*
