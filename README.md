@@ -1,5 +1,6 @@
 # Novel Nexus
 
+![novel nexus](https://www.pinterest.com/pin/1037305726671301421/)
 A collection of the many chapters I have read, over the course of the many different chapters of my life.\
 
 *create canva banner*
