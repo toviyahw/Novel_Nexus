@@ -76,3 +76,4 @@ immersivity: did I forget about the real world while reading this? was I transpo
  12-13-2024 changes: isbn --> read_isbn for books table to record the specific book read- library_isbn attribute added to my_library table to account for books that I own that I have read in a different format.\
 
  12-15-2024 changes: using excel functions to streamline manual data entry, aggregate calculations, custom functions, removing characters.\
+ adding isbn for copies that I currently own- for some books i have more than one copy in more than 1 different format. This will help me differenciate copies.\
