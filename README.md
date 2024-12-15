@@ -80,3 +80,5 @@ immersivity: did I forget about the real world while reading this? was I transpo
  Now that I have my excel sheets complete, the "master" table has a lot of null values. I want a master table with no null values when I build some parts of my dashboard, so I will use pandas to clean up my dataset before I create the tables using SQL. I downloaded my sheets separately, and used pandas to check for duplicate and null values.\
  With my newly cleaned data, I updated my excel files, replacing the originals with the cleaned data. Now I can move on to creating my tables using SQL and inserting my data.\
  Using IPython interactive shell to print all statements not just the last one: InteractiveShell.ast_node_interactivity is a configuration option in IPython and Jupyter that controls how the output of individual statements in a code cell is displayed. The default, 'last_expr' only displays the output of the last expression in the cell.\
+ \
+ **TO DO: use matplotlib to create scatterplot showing relationship between book_id and calc_score.**\
