@@ -74,3 +74,5 @@ immersivity: did I forget about the real world while reading this? was I transpo
  NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. I have also only included books that I recorded the read date for in the date_read table. Hence, the overall books table contains books I have read, but I may not be alble to include them in additional more detailed tables.\
  \
  12-13-2024 changes: isbn --> read_isbn for books table to record the specific book read- library_isbn attribute added to my_library table to account for books that I own that I have read in a different format.\
+
+ 12-15-2024 changes: using excel functions to streamline manual data entry, aggregate calculations, custom functions, removing characters.\
