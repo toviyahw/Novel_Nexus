@@ -92,7 +92,7 @@ Re-readability: How likely is it that I would re-read this book and enjoy it? Th
 
 Immersivity: Did I become immersed in the story and forget about the real world while reading this? Was I transported?
 
-**NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.**
+NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.
 
 
 **4. Included Files**
@@ -101,7 +101,7 @@ Immersivity: Did I become immersed in the story and forget about the real world 
 3. PostgreSQL Documentation: A file containing the queries I wrote to create my tables, insert my data, and joins executed. *{To be uploaded}*
 4. EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
 
-**5. Future Enhancements**
+**5. Future Enhancements**\
 -After initial completion, I will update the database montly as I continue to read.
 
 
