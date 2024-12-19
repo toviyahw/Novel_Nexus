@@ -23,14 +23,14 @@ Novel Nexus is a personal database project designed to catalog all the books I h
 5. Future Enhancements
 
 
-**1. Introduction**
+## 1. Introduction
 
 As an avid reader who enjoys analyzing patterns, I wanted a way to catalog my collection of books while gaining hands-on experience with relational databases and data visualization. This project allows me to develop and practice my skills in Python, SQL, Excel, and Tableau while exploring my reading habits and preferences. Novel Nexus is not just a functional database but also a tool for self-reflection and growth as I analyze my reading behaviors over time and make informed decisions about future book choices.
 
 Keep reading to explore how I built this project, the data it includes, and the tools I'm using to bring it to life!
 
 
-**2. Process**
+## 2. Process
 
 Novel Nexus began as a csv export of my goodreads library (the only books record I had kept up until that point). The initial csv file was horrendous, and included unneccessary and innacurate information on books that I did not read or own, and I realized that much of my data would have to be input manually. I created an ER Diagram for my database, and produced excel sheets (my future SQL tables) with columns based off of that information. I 
 
@@ -43,13 +43,13 @@ Using my terminal and pgAdmin4 I will create tables and insert my data into a Po
 Novel Nexus is a work in progress and will be updated frequently as I am in the earlier stages of building on this project.
 
 
-**3. Data Description**
+## 3. Data Description
 
 **My Tables**
 
 entity --> (attributes)
 
-book_read --> (book_id, title, isbn, page_count, start date, end date, year)\
+book_read --> (book_id, title, isbn, page_count, start_date, end_date, year)\
 *Table contains general information on the book*
  
 authors_read -->(author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
@@ -95,13 +95,13 @@ Immersivity: Did I become immersed in the story and forget about the real world 
 NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.
 
 
-**4. Included Files**
+## 4. Included Files
 1. Readme.md: Outlines project goals, processes, and dataset details.
 2. Tableau Visuals: Hosted on adjacent site. *{To be uploaded}*
 3. PostgreSQL Documentation: A file containing the queries I wrote to create my tables, insert my data, and joins executed. *{To be uploaded}*
 4. EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
 
-**5. Future Enhancements**\
+## 5. Future Enhancements
 -After initial completion, I will update the database montly as I continue to read.
 
 
