@@ -49,7 +49,7 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 
 entity --> (attributes)
 
-book_read --> (book_id, title, isbn, page_count, start_date, end_date, year)\
+books_read --> (book_id, title, isbn, page_count, start_date, end_date, year)\
 *Table contains general information on the book*
  
 authors_read -->(author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
