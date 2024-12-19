@@ -6,15 +6,15 @@ A database con\
 
 **Purpose**
 
-Novel Nexus is a personal database project designed to catalog all the books I have read and own. This project combines my passion for reading with my interest in data science and database management. Through this project, I aim to:\
+Novel Nexus is a personal database project designed to catalog all the books I have read and own. This project combines my passion for reading with my interest in data science and database management. Through this project, I aim to:
 
--Gain practice in designing and managing relational databases using SQL.\
+-Gain practice in designing and managing relational databases using SQL.
 
--Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.\
+-Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.
 
--Visualize data using Tableau to better understand my reading habits and behaviors.\
+-Visualize data using Tableau to better understand my reading habits and behaviors.
 
--Maintain a detailed record of my books for personal reference and analysis.\
+-Maintain a detailed record of my books for personal reference and analysis.
 
 Potential entities:\
 
