@@ -1,6 +1,5 @@
 # Novel Nexus
 
-*insert canva banner*
 
 Welcome to Novel Nexus, a personal project that bridges my passion for reading with my technical skills in data science and database management.
 
@@ -8,13 +7,13 @@ Welcome to Novel Nexus, a personal project that bridges my passion for reading w
 
 Novel Nexus is a personal database project designed to catalog all the books I have read and own. This project combines my passion for reading with my interest in data science and database management. Through this project, I aim to:
 
- -Gain practice in designing and managing relational databases using SQL.
+-Gain practice in designing and managing relational databases using SQL.
 
- -Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.
+-Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.
 
- -Visualize data using Tableau to better understand my reading habits and behaviors.
+-Visualize data using Tableau to better understand my reading habits and behaviors.
 
- -Maintain a detailed record of my books for personal reference and analysis.
+-Maintain a detailed record of my books for personal reference and analysis.
 
 **Table of contents:**
 1. Introduction
@@ -30,55 +29,54 @@ As an avid reader who enjoys analyzing patterns, I wanted a way to catalog my co
 
 Keep reading to explore how I built this project, the data it includes, and the tools I'm using to bring it to life!
 
+
 **2. Process**
 
-Novel Nexus began as a csv export of my goodreads library (the only books record I had kept up until that point). The initial csv file was horrendous, and included unneccessary and innacurate information on books that I did not read or own, and I realized that much of my data would have to be input manually. I created an ER Diagram for my database, and produced excel sheets (my future SQL tables) with columns based off of that information. 
+Novel Nexus began as a csv export of my goodreads library (the only books record I had kept up until that point). The initial csv file was horrendous, and included unneccessary and innacurate information on books that I did not read or own, and I realized that much of my data would have to be input manually. I created an ER Diagram for my database, and produced excel sheets (my future SQL tables) with columns based off of that information. I 
 
-After inputting my data on Excel, I opened the workbook using Tableau and created a series of visuals that capture patterns and relationships within my dataset.
+*{To be uploaded}* Using Python, I will check my dataset for duplicates and NULL values and clean it using pandas before transforming the dataset into a dataframe to create visuals using various Python libraries.
+
+*{Uploaded}* After inputting my data on Excel, I was able to clean it up and complete menial tasks such as calculating scores and removing unneccessary characteres using functions. I connected my finalized workbook data to Tableau and created a series of visuals that capture patterns and relationships within my dataset.
+
+*{To be uploaded}* Using my terminal and pgAdmin4 I will create tables and insert my data into a PostgreSQL database. Then I will perform joins that give me insights into my reading and book buying habits.
+
+Novel Nexus is a work in progress and will be updated frequently as I am in the earlier stages of building on this project.
+
 
 **3. Data Description**
 
+**My Tables**
 
-Potential entities:\
+entity --> (attributes)
 
-book table --> (book_id, title, isbn, page_count, start date, end date)\
- \
-authors table -->(book_id, name) {BOOKS MAY HAVE MANY AUTHORS}\
- \
-genre table --> book_id, genre {BOOKS MAY HAVE MANY GENRES}\
- \
-ratings table --> (book_id, plot, writing, pacing, characters, impact, re-redability, immersivity,\
- \
-tags table --> (book_id, tag) TAGS:(childhood favorite, one of my favorites OMF, one-sitting (for books that were unputdownable), tearjerker, laughed-out-loud, mind-blown, called-it, never-again, reread-worthy, gut-wrenching, what-just-happened, slump-inducing, thought-provoking) {BOOKS MAY HAVE MANY TAGS}\
- \
-format table (book_id, type) TYPES: audio, digital, physical
- \
-owned_copies --> (book_id, price)\
- \
-***MAYBE***\
-awards table (nominations, awards, year)\
-Series table (# books included in series, start and end date for series)\
- \
-Why was this necessary, no platform provides ratings on what I really care about, this is custom made for me, and will help me understand my reading habits and behaviors, as well as serve as a display of how my reading habits and tastes evolve over time. Goodreads is garbage.\
- \
-rating books on a scale from 1-5 and writing a breif 
- \
-Whenever I tell someone I love to read books, the question that typically follows is "What's your favorite book?", and thats the part where I freeze and spiral. A question that haunts me relentlessly because the truth is, I could not even begin to answer that. There are too many favorites, for too many different reasons, that change too often. So- instead I wrote this SQL query that will tell me what my current "favorite" is, and I will have a quick and easy answer to that dreaded question that I could never conjure up an answer to on my own.
- \
-Stored procedure ideas: favorite ever, best of the month BOM, best of the year, average reading time, average pages read, totals for these, best in each genre, best series, total days read, best audio, physical, hardcover, digital AND MOST IMPORTANTLY my 'favorite' book. total books read, and by each genre.\
+book_read --> (book_id, title, isbn, page_count, start date, end date, year)\
+*Table contains general information on the book*
  
+authors_read -->(author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
+*Table contains author(s) of a book*
 
-CHALLENGES:\
-keeping fname and lname together, in this instance, author names, especially across different cultures may not be in this format, many authors also use middle initials.\
-additional authors table, its not common for books I read to have more than 1 author, so this table contains additional authors of books I have read UPDATE NOT NECESSARY, all authors go into author table.\
- \
-altering data types, creating a new enum data type to hold the formats, changing isbn from INT to varchar to accommodate for kindle digital and audio isbns which may contain non numerical characters.\
- \
-creating new page_count table to account for some books that do not have pages aka audiobooks.\
- \
-Choosing rankings categories that I can apply to everything I have read (no null values for ratings) and defining a point system (5 pts per category, half values accepted, scale is 1-5) UPDATE: no need for half values, as I am rating- I am able to assign whole numbers quite easily.\
- \
-*Defining my ratings categories:*
+date_read --> (date_read_id, book_id, start_date, end_date, read_duration) {The same book may be read more than once, so a unique idenifier is needed.}\
+*Table contains information on when I read the book*
+
+genres_read --> (genre_id, book_id, genre) {Books may belong to more than one genre, so a unique idenifier is needed.}\
+*Table contains the genre(s) a book belongs to*
+
+format_read--> (book_id, format) format types: 'audio', 'paperback', 'hardcover', 'digital'\
+*Table contains information on what format the book was read in.*
+
+series_read --> (series_id, series_name, book_number){Books may belong to more than one series, so a unique idenifier is needed.}\
+*Table contains information on books that belong to one or more series.*
+
+my_library --> (library_id, book_id, price, isbn)\
+*Table contains information on books I own physical copies of.*
+
+gr_scores --> (book_id, avg_gr_rating, calculated_score)\
+*Table contains information on the average Goodreads score of books I have read. This table will allow me to see the relationship between my personal rankings and that of Goodreads.*
+
+ratings --> (book_id, plot, writing, pacing, personages, impact, re-redability, immersivity, overall_score, calculated_score)\
+*Table contains individual scores (0-5) for different categories as well as calculated overall scores. See below for descriptions of individual rating categories.*
+
+**Rating Category Descriptions:**
 
 Plot: How much did I enjoy the overall story progression and conclusion? What was its entertainment value?
 
@@ -94,13 +92,7 @@ Re-readability: How likely is it that I would re-read this book and enjoy it? Th
 
 Immersivity: Did I become immersed in the story and forget about the real world while reading this? Was I transported?
 
+**NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.**
 
-
-NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. I have also only included books that I recorded the read date for in the date_read table. Hence, the overall books table contains books I have read, but I may not be alble to include them in additional more detailed tables.
- 
- 12-13-2024 changes: isbn --> read_isbn for books table to record the specific book read- library_isbn attribute added to my_library table to account for books that I own that I have read in a different format.\
-
- 12-15-2024 changes: using excel functions to streamline manual data entry, aggregate calculations, custom functions, removing characters.\
- adding isbn for copies that I currently own- for some books i have more than one copy in more than 1 different format. This will help me differenciate copies.\
 
  Thank you for exploring the Novel Nexus project! This project not only reflects my enthusiasm for reading but also showcases my technical skills in data management and visualization. If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!
