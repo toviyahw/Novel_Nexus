@@ -34,11 +34,11 @@ Keep reading to explore how I built this project, the data it includes, and the 
 
 Novel Nexus began as a csv export of my goodreads library (the only books record I had kept up until that point). The initial csv file was horrendous, and included unneccessary and innacurate information on books that I did not read or own, and I realized that much of my data would have to be input manually. I created an ER Diagram for my database, and produced excel sheets (my future SQL tables) with columns based off of that information. I 
 
-*{To be uploaded}* Using Python, I will check my dataset for duplicates and NULL values and clean it using pandas before transforming the dataset into a dataframe to create visuals using various Python libraries.
+Using Python, I will check my dataset for duplicates and NULL values and clean it using pandas before transforming the dataset into a dataframe to create visuals using various Python libraries.
 
-*{Uploaded}* After inputting my data on Excel, I was able to clean it up and complete menial tasks such as calculating scores and removing unneccessary characteres using functions. I connected my finalized workbook data to Tableau and created a series of visuals that capture patterns and relationships within my dataset.
+After inputting my data on Excel, I was able to clean it up and complete menial tasks such as calculating scores and removing unneccessary characteres using functions. I connected my finalized workbook data to Tableau and created a series of visuals that capture patterns and relationships within my dataset.
 
-*{To be uploaded}* Using my terminal and pgAdmin4 I will create tables and insert my data into a PostgreSQL database. Then I will perform joins that give me insights into my reading and book buying habits.
+Using my terminal and pgAdmin4 I will create tables and insert my data into a PostgreSQL database. Then I will perform joins that give me insights into my reading and book buying habits.
 
 Novel Nexus is a work in progress and will be updated frequently as I am in the earlier stages of building on this project.
 
@@ -95,4 +95,14 @@ Immersivity: Did I become immersed in the story and forget about the real world 
 **NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.**
 
 
- Thank you for exploring the Novel Nexus project! This project not only reflects my enthusiasm for reading but also showcases my technical skills in data management and visualization. If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!
+**4. Included Files**
+1. Readme.md: Outlines project goals, processes, and dataset details.
+2. Tableau Visuals: Hosted on adjacent site. *{To be uploaded}*
+3. PostgreSQL Documentation: A file containing the queries I wrote to create my tables, insert my data, and joins executed. *{To be uploaded}*
+4. EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
+
+**5. Future Enhancements**
+-After initial completion, I will update the database montly as I continue to read.
+
+
+**Thank you for exploring the Novel Nexus project! This project not only reflects my enthusiasm for reading but also showcases my technical skills in data management and visualization. If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!**
