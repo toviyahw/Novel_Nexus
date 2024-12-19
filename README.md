@@ -1,10 +1,20 @@
 # Novel Nexus
-![fav copy](https://github.com/user-attachments/assets/c1b8c3b7-1ef0-454d-805c-c0e4c2437b40)
 
-
-A collection of the many chapters I have read, over the course of the many different chapters of my life.\
+A database con\
 
 *create canva banner*
+
+**Purpose**
+
+Novel Nexus is a personal database project designed to catalog all the books I have read and own. This project combines my passion for reading with my interest in data science and database management. Through this project, I aim to:\
+
+-Gain practice in designing and managing relational databases using SQL.\
+
+-Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.\
+
+-Visualize data using Tableau to better understand my reading habits and behaviors.\
+
+-Maintain a detailed record of my books for personal reference and analysis.\
 
 Potential entities:\
 
