@@ -90,13 +90,13 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 
 
 ## 4. Included Files
-1. Readme.md: Outlines project goals, processes, and dataset details.
-2. Tableau Visuals: Hosted on adjacent site. *{To be uploaded}*
-3. PostgreSQL Documentation: A file containing the queries I wrote to create my tables, insert my data, and joins executed. *{To be uploaded}*
-4. EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
+* Readme.md: Outlines project goals, processes, and dataset details.
+* Tableau Visuals: Hosted on adjacent site. *{To be uploaded}*
+* PostgreSQL Documentation: A file containing the queries I wrote to create my tables, insert my data, and joins executed. *{To be uploaded}*
+* EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
 
 ## 5. Future Enhancements
 After initial completion, I will update the SQL database and Excel sheets monthly at a minimum as I continue to read. By continuing to populate Novel Nexus, I will be able to produce more robust visuals and draw more accurate insights surrounding my reading habits over time.
 
 
-**Thank you for exploring the Novel Nexus project! This project not only reflects my enthusiasm for reading but also showcases my technical skills in data management and visualization. If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!**
+**Thank you for exploring the Novel Nexus project! If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!**
