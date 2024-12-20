@@ -30,11 +30,11 @@ Keep reading to explore how I built this project, the data it includes, and the 
 
 Novel Nexus began as a csv export of my goodreads library (the only books record I had kept up until that point). The initial csv file was horrendous, and included unneccessary and innacurate information on books that I did not read or own, and I realized that much of my data would have to be input manually. I created an ER Diagram for my database, and produced excel sheets (my future SQL tables) with columns based off of that information. I 
 
-Using Python, I will check my dataset for duplicates and NULL values and clean it using pandas before transforming the dataset into a dataframe to create visuals using various Python libraries.
+With Python, I will check my dataset for duplicates and NULL values and clean it using pandas before transforming the dataset using Pandas to create visuals using various Python libraries.
 
 After inputting my data on Excel, I was able to clean it up and complete menial tasks such as calculating scores and removing unneccessary characteres using functions. I connected my finalized workbook data to Tableau and created a series of visuals that capture patterns and relationships within my dataset.
 
-Using my terminal and pgAdmin4 I will create tables and insert my data into a PostgreSQL database. Then I will perform joins that give me insights into my reading and book buying habits.
+Using my terminal and pgAdmin4 I will create tables and insert my data into a PostgreSQL database. Then I will perform joins that answer specific questions and produce additional insights into my reading and book buying habits.
 
 Novel Nexus is a work in progress and will be updated frequently as I am in the earlier stages of building on this project.
 
