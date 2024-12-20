@@ -102,5 +102,15 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 ## 5. Future Enhancements
 After initial completion, I will update the SQL database and Excel sheets monthly at a minimum as I continue to read. By continuing to populate Novel Nexus, I will be able to produce more robust visuals and draw more accurate insights surrounding my reading habits over time.
 
+## TABLEAU VISUALS PREVIEW
+**NOTE: Pardon the construction, this project is still in the works! The images below are only a static look at some of the early visuals created for Novel Nexus. This section will be removed upon the upload of the complete set of finalized dynamic visuals.**
+<img width="1440" alt="Pages Read" src="https://github.com/user-attachments/assets/1cb3b238-2176-4970-a9d1-0a8580f19c54" />
+<img width="375" alt="Formats Read" src="https://github.com/user-attachments/assets/7028ee5b-771a-406c-9db6-d6e2f025b4b0" />
+<img width="239" alt="Page Count Stats" src="https://github.com/user-attachments/assets/20e86730-967a-4b4a-9d4b-7ac166367bed" />
+<img width="1440" alt="Scores Comparison" src="https://github.com/user-attachments/assets/6bee4f0b-b910-40bf-9d3c-f072e26e3e8f" />
+<img width="1440" alt="Genres Read" src="https://github.com/user-attachments/assets/6cb4d756-155f-4444-9346-1df335b4d402" />
+
+
+
 
 **Thank you for exploring the Novel Nexus project! If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!**
