@@ -43,31 +43,31 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 
 ### My Tables
 
-1. **books_read -->** (book_id, title, isbn, page_count, start_date, end_date, year)\
+1. **books_read --> (book_id, title, isbn, page_count, start_date, end_date, year)**\
 *Table contains general information on the book*
  
-2. **authors_read -->** (author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
+2. **authors_read --> (author_id, book_id, author_name)** {Books may have more than one author, so a unique idenifier is needed.}\
 *Table contains author(s) of a book*
 
-3. **date_read -->** (date_read_id, book_id, start_date, end_date, read_duration) {The same book may be read more than once, so a unique idenifier is needed.}\
+3. **date_read --> (date_read_id, book_id, start_date, end_date, read_duration)** {The same book may be read more than once, so a unique idenifier is needed.}\
 *Table contains information on when I read the book*
 
-4. **genres_read -->** (genre_id, book_id, genre) {Books may belong to more than one genre, so a unique idenifier is needed.}\
+4. **genres_read --> (genre_id, book_id, genre)** {Books may belong to more than one genre, so a unique idenifier is needed.}\
 *Table contains the genre(s) a book belongs to*
 
-5. **format_read-->** (book_id, format) format types: 'audio', 'paperback', 'hardcover', 'digital'\
+5. **format_read--> (book_id, format)** format types: 'audio', 'paperback', 'hardcover', 'digital'\
 *Table contains information on what format the book was read in.*
 
-6. **series_read -->** (series_id, series_name, book_number){Books may belong to more than one series, so a unique idenifier is needed.}\
+6. **series_read --> (series_id, series_name, book_number)** {Books may belong to more than one series, so a unique idenifier is needed.}\
 *Table contains information on books that belong to one or more series.*
 
-7. **my_library -->** (library_id, book_id, price, isbn)\
+7. **my_library --> (library_id, book_id, price, isbn)**\
 *Table contains information on books I own physical copies of.*
 
-8. **gr_scores -->** (book_id, avg_gr_rating, calculated_score)\
+8. **gr_scores --> (book_id, avg_gr_rating, calculated_score)**\
 *Table contains information on the average Goodreads score of books I have read. This table will allow me to see the relationship between my personal rankings and that of Goodreads.*
 
-9. **ratings -->** (book_id, plot, writing, pacing, personages, impact, re-redability, immersivity, overall_score, calculated_score)\
+9. **ratings --> (book_id, plot, writing, pacing, personages, impact, re-redability, immersivity, overall_score, calculated_score)**\
 *Table contains individual scores (0-5) for different categories as well as calculated overall scores. See below for descriptions of individual rating categories.*
 
 ### Rating Category Descriptions:
