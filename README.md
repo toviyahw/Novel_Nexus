@@ -86,6 +86,10 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 
 **Immersivity:** Did I become immersed in the story and forget about the real world while reading this? Was I transported?
 
+**Overall_score:** This is the sum of all scores for a book across the 7 categories.
+
+**Calculated_score** This is the overall score calculated as a percentage. This will allow me to compare my rating to the average on Goodreads.
+
 **NOTE:** I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.
 
 
