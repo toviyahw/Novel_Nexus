@@ -1,21 +1,17 @@
-# Novel Nexus
+<img width="960" alt="novel_nexus" src="https://github.com/user-attachments/assets/a1c0be0f-2fba-4fe4-8583-5c25fe18756d" />  
 
+### *Welcome to Novel Nexus, a personal project that bridges my passion for reading with my technical skills in data science and database management.*
 
-Welcome to Novel Nexus, a personal project that bridges my passion for reading with my technical skills in data science and database management.
-
-**Purpose:**
+## Purpose
 
 Novel Nexus is a personal database project designed to catalog all the books I have read and own. This project combines my passion for reading with my interest in data science and database management. Through this project, I aim to:
 
--Gain practice in designing and managing relational databases using SQL.
+* Gain practice in designing and managing relational databases using SQL.
+* Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.
+* Visualize data using Tableau to better understand my reading habits and behaviors.
+* Maintain a detailed record of my books for personal reference and analysis.
 
--Develop proficiency in writing SQL queries, including joins, to extract meaningful insights.
-
--Visualize data using Tableau to better understand my reading habits and behaviors.
-
--Maintain a detailed record of my books for personal reference and analysis.
-
-**Table of contents:**
+## Table of contents
 1. Introduction
 2. Process
 3. Data Description
@@ -45,54 +41,52 @@ Novel Nexus is a work in progress and will be updated frequently as I am in the 
 
 ## 3. Data Description
 
-**My Tables**
+### My Tables
 
-entity --> (attributes)
-
-books_read --> (book_id, title, isbn, page_count, start_date, end_date, year)\
+1. **books_read -->** (book_id, title, isbn, page_count, start_date, end_date, year)\
 *Table contains general information on the book*
  
-authors_read -->(author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
+2. **authors_read -->** (author_id, book_id, author_name) {Books may have more than one author, so a unique idenifier is needed.}\
 *Table contains author(s) of a book*
 
-date_read --> (date_read_id, book_id, start_date, end_date, read_duration) {The same book may be read more than once, so a unique idenifier is needed.}\
+3. **date_read -->** (date_read_id, book_id, start_date, end_date, read_duration) {The same book may be read more than once, so a unique idenifier is needed.}\
 *Table contains information on when I read the book*
 
-genres_read --> (genre_id, book_id, genre) {Books may belong to more than one genre, so a unique idenifier is needed.}\
+4. **genres_read -->** (genre_id, book_id, genre) {Books may belong to more than one genre, so a unique idenifier is needed.}\
 *Table contains the genre(s) a book belongs to*
 
-format_read--> (book_id, format) format types: 'audio', 'paperback', 'hardcover', 'digital'\
+5. **format_read-->** (book_id, format) format types: 'audio', 'paperback', 'hardcover', 'digital'\
 *Table contains information on what format the book was read in.*
 
-series_read --> (series_id, series_name, book_number){Books may belong to more than one series, so a unique idenifier is needed.}\
+6. **series_read -->** (series_id, series_name, book_number){Books may belong to more than one series, so a unique idenifier is needed.}\
 *Table contains information on books that belong to one or more series.*
 
-my_library --> (library_id, book_id, price, isbn)\
+7. **my_library -->** (library_id, book_id, price, isbn)\
 *Table contains information on books I own physical copies of.*
 
-gr_scores --> (book_id, avg_gr_rating, calculated_score)\
+8. **gr_scores -->** (book_id, avg_gr_rating, calculated_score)\
 *Table contains information on the average Goodreads score of books I have read. This table will allow me to see the relationship between my personal rankings and that of Goodreads.*
 
-ratings --> (book_id, plot, writing, pacing, personages, impact, re-redability, immersivity, overall_score, calculated_score)\
+9. **ratings -->** (book_id, plot, writing, pacing, personages, impact, re-redability, immersivity, overall_score, calculated_score)\
 *Table contains individual scores (0-5) for different categories as well as calculated overall scores. See below for descriptions of individual rating categories.*
 
-**Rating Category Descriptions:**
+### Rating Category Descriptions:
 
-Plot: How much did I enjoy the overall story progression and conclusion? What was its entertainment value?
+**Plot:** How much did I enjoy the overall story progression and conclusion? What was its entertainment value?
 
-Writing: How much did i enjoy the writing and dialogue?
+**Writing:** How much did i enjoy the writing and dialogue?
 
-Pacing: did the book feel sluggish and difficult to get through at times?
+**Pacing:** did the book feel sluggish and difficult to get through at times?
 
-Impact: How much did reading this book impact me? This includes physical reactions while reading (laughter, tears, gasps) as well as how much I found myself thinking about the book after reading it.
+**Impact:** How much did reading this book impact me? This includes physical reactions while reading (laughter, tears, gasps) as well as how much I found myself thinking about the book after reading it.
 
-Personages: How much did I enjoy the character(s)/characterization?
+**Personages:** How much did I enjoy the character(s)/characterization?
 
-Re-readability: How likely is it that I would re-read this book and enjoy it? This is an incredible important category as it is the factor that often separates the great books from the favorite books.
+**Re-readability:** How likely is it that I would re-read this book and enjoy it? This is an incredible important category as it is the factor that often separates the great books from the favorite books.
 
-Immersivity: Did I become immersed in the story and forget about the real world while reading this? Was I transported?
+**Immersivity:** Did I become immersed in the story and forget about the real world while reading this? Was I transported?
 
-NOTE: I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.
+**NOTE:** I have only included ratings for books that I felt I could provide accurate ratings on. In the dates_read table I have only included books that I had accurately recorded the read date for. The overall books_read table contains books I have read, but not every book in this table will recieve a score or assigned read dates. ISBN numbers for books_read and my_library may differ, as sometimes I read a digital or audio version of a book I own.
 
 
 ## 4. Included Files
@@ -102,7 +96,7 @@ NOTE: I have only included ratings for books that I felt I could provide accurat
 4. EDA with Python: An .ipynb file outlining the process of cleaning my data, loading it into a dataframe, and performing exploratory data alaysis using various python libraries. *{To be uploaded}*
 
 ## 5. Future Enhancements
--After initial completion, I will update the database montly as I continue to read.
+After initial completion, I will update the SQL database and Excel sheets monthly at a minimum as I continue to read. By continuing to populate Novel Nexus, I will be able to produce more robust visuals and draw more accurate insights surrounding my reading habits over time.
 
 
 **Thank you for exploring the Novel Nexus project! This project not only reflects my enthusiasm for reading but also showcases my technical skills in data management and visualization. If you have feedback or suggestions, feel free to reach out as I am always making updates and improvements!**
